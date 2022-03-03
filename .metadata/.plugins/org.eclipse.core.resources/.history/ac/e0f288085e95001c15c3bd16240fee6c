@@ -1,0 +1,6 @@
+package Mazenet;
+
+public interface Bank1 {
+	abstract void roi();
+
+}

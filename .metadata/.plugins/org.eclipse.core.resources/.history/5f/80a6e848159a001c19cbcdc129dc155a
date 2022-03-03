@@ -1,0 +1,22 @@
+package Day_x;
+
+import java.lang.System.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4J.Logger;
+
+public class Log4J {
+	private static final Logger log=LogManager.getLogger(Log4J.class);
+
+	public static void main(String[] args) {
+		log.debug("This is my debug message");
+		log.info("This is my debug message");
+		log.warn("This is my debug message");
+		log.error("This is my debug message");
+		log.fatal("This is my debug message");
+		
+		
+
+	}
+
+}

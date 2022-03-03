@@ -1,0 +1,13 @@
+2022-03-02 16:15:07,650 DEBUG D.Log4J [main] This is my debug message
+2022-03-02 16:15:07,653 INFO D.Log4J [main] This is my info message
+2022-03-02 16:15:07,653 WARN D.Log4J [main] This is my warn message
+2022-03-02 16:15:07,654 ERROR D.Log4J [main] This is my error message
+2022-03-02 16:15:07,654 FATAL D.Log4J [main] This is my fatal message
+2022-03-02 16:15:31,885 INFO D.Log4J [main] This is my info message
+2022-03-02 16:15:31,887 WARN D.Log4J [main] This is my warn message
+2022-03-02 16:15:31,887 ERROR D.Log4J [main] This is my error message
+2022-03-02 16:15:31,888 FATAL D.Log4J [main] This is my fatal message
+2022-03-02 16:22:11,991 INFO D.Log4J [main] This is my info message
+2022-03-02 16:22:11,994 WARN D.Log4J [main] This is my warn message
+2022-03-02 16:22:11,994 ERROR D.Log4J [main] This is my error message
+2022-03-02 16:22:11,994 FATAL D.Log4J [main] This is my fatal message

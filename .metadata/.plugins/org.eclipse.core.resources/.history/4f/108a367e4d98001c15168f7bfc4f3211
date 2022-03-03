@@ -1,0 +1,15 @@
+1	package Mazenet;
+2	import java.util.*;
+3	public class HashMapElements {
+4	public static void main(String[] args) {
+5		Map<String,Integer> h=new HashMap<>();		
+6		h.put("sudhakar", 1);		
+7		h.put("hima bindu", 2);		
+8		h.put("koushik", 3);		
+9		h.put("sathvika", 4);		
+10		h.put("koushik", 3);		
+11		for(Map.Entry<String,Integer> entry:h.entrySet())	{	
+12		System.out.println("Key : "+entry.getKey()+"	Value	"+entry.getValue
+());				
+13		}		
+14	}			

@@ -1,0 +1,64 @@
+package Mazenet;
+
+import java.io.*;
+import java.util.*;
+class HallBooking implements Runnable {
+    
+    private String hallName;
+    private double cost;
+    private int hallCapacity;
+    private int seatsBooked;
+    
+    
+    
+    HallBooking(){
+        
+    }
+    HallBooking(String hallName,double cost,int hallcapacity,int seatsBooked){
+        this.hallName = hallName;
+        this.cost = cost;
+        this.hallCapacity = hallcapacity;
+        this.seatsBooked = seatsBooked;
+    }
+    
+    
+    @Override
+    public void run(){
+        
+        
+        if((seatsBooked*100)> cost){
+            System.out.println("Profit");
+            
+        }
+        else{
+            System.out.println("Loss");
+        }
+    }
+    
+}
+
+class StatusCheck{
+    
+    static int n = 0;
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        sc.nextLine();
+        
+        for(int i=0;i<n;i++){
+            
+            String hall = sc.nextLine();
+            double cost =sc.nextDouble();
+            int hallCapacity = sc.nextInt();
+            int seatsBooked= sc.nextInt();
+            
+           // double cost1 = Double.parseDouble(cost);
+           // int hallcap = Integer.parseInt(capa);
+            // int seat = Integer.parseInt(boo);
+            
+            HallBooking h1 = new HallBooking(hall,cost,hallCapacity,seatsBooked);
+            Thread t1 = new Thread(h1);
+            t1.start();
+        }
+    }
+}

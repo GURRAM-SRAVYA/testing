@@ -1,0 +1,5 @@
+package org.apache.logging.log4J;
+
+public class Logger {
+
+}

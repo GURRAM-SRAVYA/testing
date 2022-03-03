@@ -1,0 +1,32 @@
+package DAY_1;
+
+import java.util.*;
+import java.util.stream.*;
+
+
+public class MappingDemo {
+	public static void main(String[] args) {
+		MappingDemo md = new MappingDemo();
+		List<Employee> empList = md.createList();
+		System.out.println("---Name of Female employees---");
+		
+		empList.stream().filter(e -> (e.getGender() == 'F').map(e -> e.getFirstName()).forEach(System.out::println);
+		int n=empList.stream().filter(e->e.getGender()=='M').mapToInt(e->e.getAge()).sum();
+		System.out.println(n);
+		
+		
+		//System.out.println("--- Name of Male employees---");
+		empList.stream().filter(e -> (e.getFirstname().startsWith("A")).forEach( System.out::println));
+		System.out.println(empList.stream().mapToInt(e->e.getAge().sum()));
+	
+		
+	}
+
+	private static List<Employee> createList() {
+		// TODO Auto-generated method stub
+		List<Employee> tempList=new ArrayList<Employee>();
+		Person person=
+		return null;
+	}
+	
+

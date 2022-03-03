@@ -1,0 +1,29 @@
+package Mazenet;
+
+public class SBI implements Bank { int simpleintrest;
+int principal;
+
+int result=0;
+SBI(int simpleintrest,int principal)
+{
+this.simpleintrest=simpleintrest; this.principal=principal;
+}
+
+
+public void roi()
+{
+result=(simpleintrest*100)/principal; System.out.println("The rate of intrest is --- "+result);
+
+}
+
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+Bank b=new SBI(1000,50000);
+b.roi();
+
+}
+
+
+}
